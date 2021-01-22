@@ -1,19 +1,16 @@
 bob: User(data: {
-    id: 1
     name: "Bob"
     email: "bobo@prisma.io"
     posts: []
 })
 
 alice: User(data: {
-    id: 2
     name: "Alice"
     email: "alice@prisma.io"
     posts: []
 })
 
 post1 : Post(data: {
-    id: 1
     authorId: 2
     content: "https://www.prisma.io/blog/z11sg6ipb3i1/"
     published: false
@@ -21,7 +18,6 @@ post1 : Post(data: {
 })
 
 post2 : Post(data: {
-    id: 2
     authorId: 1
     content: "https://graphqlweekly.com/"
     published: true
@@ -29,7 +25,6 @@ post2 : Post(data: {
 })
 
 post3 : Post(data: {
-    id: 3
     authorId: 1
     content: "https://twitter.com/prisma/"
     published: false
