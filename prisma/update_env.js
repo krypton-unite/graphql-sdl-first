@@ -23,7 +23,6 @@ exec(`heroku config:get DATABASE_URL -a ${env_data.parsed.HEROKU_DB_NAME}`, (err
     env_data.parsed.DATABASE_URL = stdout
 
     variableExpansion(env_data)
-    console.log(env_data)
 
     writeFile(env_file_path, `DATABASE_URL_WITH_SCHEMA=${env_data.parsed.DATABASE_URL_WITH_SCHEMA}`, function (err) {
         if (err) throw err;
